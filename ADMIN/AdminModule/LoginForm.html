@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Log in to your Pet Care Services account, or register for a new account.">
+
+    <title>Pet Care Services | Log in</title>
+
+            
+<link rel="shortcut icon" type="image/x-icon" href="images/icontab.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/icontab.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icontab.png">
+
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="images/icontab.png">
+
+<meta name="application-name" content="UserFrosting">
+<meta name="msapplication-tooltip" content="A secure, modern user management system for PHP.">
+<meta name="msapplication-config" content="https://demo.userfrosting.com/assets/local/core/favicons/ieconfig.xml">
+
+<link rel="apple-touch-icon-precomposed" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/icontab.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icontab.png">
+<link rel="manifest" href="https://demo.userfrosting.com/assets/local/core/favicons/manifest.json">
+<meta name="theme-color" content="#f3f2e4">
+
+<link rel="mask-icon" href="https://demo.userfrosting.com/assets/local/core/favicons/safari-pinned-tab.svg" color="#f39ca1">
+
+                        
+<!-- Include main CSS asset bundle -->
+<link rel="stylesheet" type="text/css" href="styles/LoginSignUp.css">
+                
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-37689257-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+        </head>
+    
+            <body class="login-page">
+                        <div class="login-box">
+    <div class="login-logo">
+        <a href="https://demo.userfrosting.com">Pet Care Services</a>
+    </div>
+    <!-- /.login-logo -->
+
+    <div class="login-box-body login-form">
+        <p class="login-box-msg">Log in</p>
+
+        <div class="form-alerts" id="alerts-page"></div>
+
+        <form action="https://demo.userfrosting.com/account/login" id="sign-in" method="post" novalidate="novalidate">
+          <input type="hidden" name="csrf_name" value="csrf58fd949e64feb">
+<input type="hidden" name="csrf_value" value="60ff845dd717659ffc342264faa848c4">
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Username or email address" name="user_name">
+            <i class="glyphicon glyphicon-user form-control-icon" aria-hidden="true"></i>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password" name="password">
+            <i class="glyphicon glyphicon-lock form-control-icon" aria-hidden="true"></i>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="js-icheck" name="rememberme" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div> Remember me!
+                </label>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+        <a href="https://demo.userfrosting.com/account/forgot-password">I forgot my password</a><br>
+        <a href="https://demo.userfrosting.com/account/resend-verification">Resend verification email</a><br>
+                    <a href="SignUpForm.html">Register</a>
+        
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+                                        
+
+<script id="uf-alert-template" type="text/x-handlebars-template">
+    <div class="alert alert-{{type}} alert-dismissible uf-alert">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="icon fa fa-fw {{icon}} pull-left"></i> <div class="uf-alert-message-container">{{message}}</div>
+    </div>
+</script>
+            
+<!-- Javascript configuration -->
+        <script>
+                var site = {
+        "uri": {
+            "public": "https://demo.userfrosting.com"
+        },
+        "debug": {
+            "ajax": false
+        },
+        "csrf": {
+    "keys": {
+        "name": "csrf_name",
+        "value": "csrf_value"
+    },
+    "name": "csrf58fd949e64feb",
+    "value": "60ff845dd717659ffc342264faa848c4"
+}
+    };
+        </script>
+                
+<!-- Load jQuery -->
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!-- Fallback if CDN is unavailable -->
+        <script>window.jQuery || document.write('<script src="https://demo.userfrosting.com/assets/vendor/jquery/dist/jquery.min.js"><\/script>')
+        </script>
+        <script src="https://demo.userfrosting.com/assets/js/main-5969e0ebb7.js"></script>
+                
+                                                
+   <!-- Include validation rules -->
+    <script>
+            var page = {
+    "validators": {
+        "login": {
+            "rules": {
+                "user_name": {
+                    "required": true,
+                    "noLeadingWhitespace": true,
+                    "noTrailingWhitespace": true
+                },
+                "password": {
+                    "required": true
+                },
+                "rememberme": []
+            },
+            "messages": {
+                "user_name": {
+                    "required": "Please specify a value for 'Username'.",
+                    "noLeadingWhitespace": "The value for 'Username' cannot begin with spaces, tabs, or other whitespace.",
+                    "noTrailingWhitespace": "The value for 'Username' cannot end with spaces, tabs, or other whitespace."
+                },
+                "password": {
+                    "required": "Please specify a value for 'Password'."
+                }
+            }
+        }
+    }
+};
+    </script>
+
+    <script>
+    site = $.extend(
+        true,               // deep extend
+        {
+            "registration" : {
+                "enabled" : "1"
+            }
+        },
+        site
+    );
+    </script>
+
+    <!-- Include page-specific JS -->
+    <script src="https://demo.userfrosting.com/assets/js/pages/sign-in-4e9d4ce5c4.js"></script>
+            
+        
+    
+</body></html>

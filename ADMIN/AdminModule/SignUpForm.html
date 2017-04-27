@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Register for a new account or log in to your Pet Care Services account.">
+
+            
+<link rel="shortcut icon" type="image/x-icon" href="images/icontab.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/icontab.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icontab.png">
+
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="images/icontab.png">
+
+<meta name="application-name" content="PetCare">
+<meta name="msapplication-tooltip" content="A secure, modern user management system for PHP.">
+<meta name="msapplication-config" content="https://demo.userfrosting.com/assets/local/core/favicons/ieconfig.xml">
+
+<link rel="apple-touch-icon-precomposed" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icontab.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/icontab.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icontab.png">
+<link rel="manifest" href="https://demo.userfrosting.com/assets/local/core/favicons/manifest.json">
+<meta name="theme-color" content="#f3f2e4">
+
+<link rel="mask-icon" href="https://demo.userfrosting.com/assets/local/core/favicons/safari-pinned-tab.svg" color="#f39ca1">
+
+                        
+<!-- Include main CSS asset bundle -->
+<link rel="stylesheet" type="text/css" href="styles/LoginSignUp.css">
+            
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-37689257-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+        </head>
+    
+            <body class="login-page">
+                        <div class="callout callout-info">
+    <h4>Welcome to Pet Care Services!</h4>
+</div>
+<div class="login-box">
+    <div class="login-logo">
+        <h1>Pet Care Services</h1>
+    </div>
+    <!-- /.login-logo -->
+
+    <div class="login-box-body register-form">
+        <p class="login-box-msg">Register</p>
+        <div class="form-alerts" id="alerts-page"></div>
+
+        <form id="register" role="form" action="https://demo.userfrosting.com/account/register" method="post" class="r-form" novalidate="novalidate">
+            <input type="hidden" name="csrf_name" value="csrf58fd908d85ab4">
+            <input type="hidden" name="csrf_value" value="490b31be4daa5f253d32d7dc8a3084c6">
+            <label for="r-form-first-name">Name</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="sr-only" for="r-form-first-name">First name</label>
+                        <input type="text" name="first_name" placeholder="First name" class="form-control" id="r-form-first-name" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="sr-only" for="r-form-last-name">Last name</label>
+                        <input type="text" name="last_name" placeholder="Last name" class="form-control" id="r-form-last-name" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="form-group">
+                <label for="r-form-username">Username</label>
+                <input type="text" name="user_name" placeholder="Choose a unique username" class="form-control" id="r-form-username" autocomplete="off">
+            </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="E-mail (verification required - use a real address!)" class="form-control" id="r-form-email">
+            </div>
+            <div class="form-group">
+                <label for="phonenum">Phone Number (format: xxxx-xxx-xxxx):</label><br/>
+                <input id="phonenum" type="tel" pattern="^\d{4}-\d{3}-\d{4}$" required>
+            </div>
+            <div class="form-group">
+                <label for="r-form-password">Password</label>
+                <input type="password" name="password" placeholder="Between 6-8 characters" class="form-control" id="r-form-password">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" form="r-form-passwordc">Confirm password</label>
+                <input type="password" name="passwordc" placeholder="Confirm password" class="form-control" id="r-form-passwordc">
+            </div>
+            <div class="collapse">
+                <label>Spiderbro: Don't change me bro, I'm tryin'a catch some flies!</label>
+                <input name="spiderbro" id="spiderbro" value="http://">
+            </div>
+            <div>
+            <h1>SIGN UP AS?</h1>
+            <label class="checkbox-styled">
+              <input type="checkbox" name="serviceprovider" value="serviceprovider" checked />
+              <span class="serviceprovider">Service Provider</span>
+            </label>
+            <br />
+            <label class="checkbox-styled">
+              <input type="checkbox" name="customer" value="customer" />
+              <span class="customer">Customer</span>
+            </label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-block btn-primary">Sign me up!</button>
+            </div>
+            <div style="padding-top: 10px;">
+                Already have an account? <a href="LoginForm.html">Log In here.</a>
+            </div>
+        </form>
+    </div>
+    <!-- /.login-box-body -->
+
+</div>
+<!-- /.login-box -->
+
+                                        
+
+<script id="uf-alert-template" type="text/x-handlebars-template">
+    <div class="alert alert-{{type}} alert-dismissible uf-alert">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="icon fa fa-fw {{icon}} pull-left"></i> <div class="uf-alert-message-container">{{message}}</div>
+    </div>
+</script>
+            
+            <!-- Javascript configuration -->
+            <script>
+                var site = {
+        "uri": {
+            "public": "https://demo.userfrosting.com"
+        },
+        "debug": {
+            "ajax": false
+        },
+        "csrf": {
+    "keys": {
+        "name": "csrf_name",
+        "value": "csrf_value"
+    },
+    "name": "csrf58fd908d85ab4",
+    "value": "490b31be4daa5f253d32d7dc8a3084c6"
+}
+    };
+            </script>
+
+            <!-- Load jQuery -->
+            <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+                    <!-- Fallback if CDN is unavailable -->
+                    <script>window.jQuery || document.write('<script src="https://demo.userfrosting.com/assets/vendor/jquery/dist/jquery.min.js"><\/script>')</script>
+            <script src="https://demo.userfrosting.com/assets/js/main-5969e0ebb7.js"></script>
+                
+                                                
+<!-- Include validation rules -->
+ <script>
+    var page = {
+    "validators": {
+        "register": {
+            "rules": {
+                "user_name": {
+                    "rangelength": [
+                        1,
+                        50
+                    ],
+                    "noLeadingWhitespace": true,
+                    "noTrailingWhitespace": true,
+                    "required": true,
+                    "username": true
+                },
+                "first_name": {
+                    "rangelength": [
+                        1,
+                        20
+                    ],
+                    "required": true
+                },
+                "last_name": {
+                    "rangelength": [
+                        1,
+                        30
+                    ]
+                },
+                "phone_number": {
+                    "required": true,
+                    "rangelength": [
+                        1,
+                        11
+                    ],
+                    "phone_number": true
+                },
+                "password": {
+                    "required": true,
+                    "rangelength": [
+                        6,
+                        8
+                    ]
+                },
+                "passwordc": {
+                    "required": true,
+                    "matchFormField": "password",
+                    "rangelength": [
+                        6,
+                        8
+                    ]
+                },
+            },
+            "messages": {
+                "user_name": {
+                    "rangelength": "Username must be between 1 and 50 characters in length.",
+                    "noLeadingWhitespace": "The value for 'Username' cannot begin with spaces, tabs, or other whitespace.",
+                    "noTrailingWhitespace": "The value for 'Username' cannot end with spaces, tabs, or other whitespace.",
+                    "required": "Please specify a value for 'Username'.",
+                    "username": "Username may consist only of lowercase letters, numbers, '.', '-', and '_'."
+                },
+                "first_name": {
+                    "rangelength": "First name must be between 1 and 20 characters in length.",
+                    "required": "Please specify a value for 'First name'."
+                },
+                "last_name": {
+                    "rangelength": "Last name must be between 1 and 30 characters in length."
+                },
+                "phone_number": {
+                    "required": "Please specify a value for 'Phone Number'.",
+                    "rangelength": "Phone number must be 11 characters in length.",
+                    "phone_number": "Invalid phone number."
+                },
+                "password": {
+                    "required": "Please specify a value for 'Password'.",
+                    "rangelength": "Password must be between 6 and 8 characters in length."
+                },
+                "passwordc": {
+                    "required": "Please specify a value for 'Confirm password'.",
+                    "matchFormField": "Your password and confirmation password must match.",
+                    "rangelength": "Confirm password must be between 6 and 8 characters in length."
+                }
+            }
+        }
+    }
+};
+</script>
+                
+<!-- Check Box -->
+    <script>
+        $('input[type="checkbox"]').click(function(){ 
+        $('input[type="checkbox"]').prop("checked", false);
+        $(this).prop("checked", true);
+        $('p').toggleClass('sad');
+        });
+    </script>
+
+    <!-- Include page-specific JS -->
+    <script src="https://demo.userfrosting.com/assets/js/pages/register-80fa5e479e.js"></script>
+                   
+    
+</body>
+</html>
