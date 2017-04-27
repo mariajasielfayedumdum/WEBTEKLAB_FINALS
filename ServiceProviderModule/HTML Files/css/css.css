@@ -1,0 +1,5 @@
+.bootstrap-sample-images img{
+    width: 100%;
+    display: block;
+    /*display: none;*/
+}
