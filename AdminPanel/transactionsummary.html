@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<html class="no-js">
+	<title>Transaction Summary</title>
+	<!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="assets/styles.css" rel="stylesheet" media="screen">
+		<script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="index.html">Admin Panel</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Group 4 <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="login.html">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li>
+                                <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b>
+
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="#">Tools <i class="icon-arrow-right"></i>
+
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu">
+                                            <li>
+                                                <a href="#">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Logs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Errors</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SEO Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">User Management<i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="userlist.html">User List</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Registration Approval</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Transaction Monitoring<i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="transactionsummary.html">Transaction Summary</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="calendar.html">Calendar</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="#">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+		
+		<div class="container">
+		  <h1>Transaction Summary</h1>
+		  <div id="table">
+			<table class="table">
+			  <tr>
+				<th>Transaction ID</th>
+                <th>Date</th>
+                <th>Customer ID</th>
+                <th>Service Provider ID</th>
+                <th>Service/s Availed</th>
+			  </tr>
+		
+            <tr>
+                <td><a href="#T123">T123</a></td>
+                <td>10-01-12</td>
+                <td>C2154090</td>
+                <td>SP1010</td>
+                <td>Pet Grooming</td>
+            </tr>
+            <tr>
+                <td><a href="#T145">T145</td>
+                <td>09-01-13</td>
+                <td>C2155465</td>
+                <td>SP1011</td>
+                <td>Pet Boarding</td>
+            </tr>
+			</table>
+		  </div>
+		  
+		  <hr>
+		  
+		  <div class="container">
+		  <h1>Transaction Details</h1>
+		  <div id="table">
+			<table class="table">
+			  <tr>
+				<th>Transaction ID</th>
+				<th>Request ID</th>
+				<th>Customer ID</th>
+				<th>Service Provider ID</th>
+				<th>Service ID</th>
+				<th>Service/s Availed</th>
+				<th>Total Amount</th>
+				<th>Date</th>
+				<th>Remarks</th>
+			  </tr>
+			  <tr id ="123">
+				<td>T123</td>
+				<td>R300</td>
+				<td>C2154090</td>
+				<td>SP1010</td>
+				<td>S5001</td>
+				<td>Pet Grooming</td>
+				<td>P600.00</td>
+				<td>10-01-12</td>
+				<td>My....</td>
+			  </tr>
+			   <tr>
+				<td>T145</td>
+				<td>R301</td>
+				<td>C2155465</td>
+				<td>SP1011</td>
+				<td>S5002</td>
+				<td>Pet Boarding</td>
+				<td>P500</td>				
+				<td>09-01-13</td>
+				<td>My...</td>
+			  </tr>
+			 </table>
+		</div>
+		</div>
+
+		
+        <!--/.fluid-container-->
+        <script src="vendors/jquery-1.9.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        <script src="assets/scripts.js"></script>
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+    </body>
+
+</body>
+</html>
